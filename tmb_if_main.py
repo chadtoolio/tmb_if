@@ -16,10 +16,10 @@ mptl = (tmb + " Portal ")
 unp = " Username and Passord"
 tc = (tmb + tc)
 th = "Tech hours"
-emgt = ( tmb + " Employee Management")
+emgt = (tmb + " Employee Management")
 pptl = "Payroll Portal"
 
-print(erost)
+print(th)
 
 
 
