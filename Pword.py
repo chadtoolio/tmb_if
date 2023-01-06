@@ -24,7 +24,7 @@ tech_name.grid(row=0, column=0)
 tech_name_entry = tkinter.ttk.Combobox(Login_Gui_Header, values=["Ryan Bowers", "Austin Calvert", "Anthony Cucaz", "Chip Myers"])
 tech_name_entry.grid(row=0, column=1)
 
-pword = tkinter.Label(Login_Gui_Header, text= "assword")
+pword = tkinter.Label(Login_Gui_Header, text= "Password")
 pword.grid(row=1, column=0)
 
 password_entry = tkinter.Entry(Login_Gui_Header)
