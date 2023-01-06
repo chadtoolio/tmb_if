@@ -9,7 +9,7 @@ from tkinter import *
 #Start of Code and Main Window
 Login_Gui = Tk()
 Login_Gui.option_add('*Font' , '35')
-Login_Gui.geometry('700x120')
+Login_Gui.geometry('500x120')
 Login_Gui.title("Total MINI & BMW Tech Hours Portal")
 
 #second Frame
@@ -41,9 +41,7 @@ password_entry = tkinter.StringVar(value="toolman")
 
 password_fr =tkinter.Label(Login_Gui_Header, text= "Password" )
 password_fr.grid(row=3, column=0)
-pass_check = tkinter.Checkbutton(password_fr, text="I accept the terms and conditions.",
-                                  variable=password_entry, onvalue="It Worky", offvalue="No Worky")
-pass_check.grid(row=3, column=1)
+
 
 
 
