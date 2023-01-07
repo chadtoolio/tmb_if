@@ -1,15 +1,29 @@
 # TODO add employee gui
+# TODO add code to GUI "if employee is filling a tech position, create list of sliding pay scales with if statemnts
+
+
+
 import openpyxl
 
 
-# Instantiate a Workbook object by excel file path
-workbook = self.Workbook("Employee database.xls")
+from openpyxl import  Workbook, load_workbook
+# define what workbook or file you want to load
+wb = load_workbook("test_db.xlsx")
+ws = wb.active
 
-# Access the first worksheet in the Excel file
-worksheet = workbook.getWorksheets().get(0)
+# print the value of an individual cell
+print(ws['B4'].value)
 
-# Insert a row into the worksheet at 3rd position
-worksheet.getCells().insertRows(2,1)
+# change the contents of any cell, could be a formula as well
+ws['B25'].value = "=sum(b13+c13)"
+wb.save("test_db.xlsx")
 
-# Save the modified Excel file in default (that is Excel 2003) format
-workbook.save("Employee database.xls")
+# get sheetnames of loaded workbook
+print(wb.sheetnames)
+
+# creat new sheet
+wb.create_sheet("john mechanic")
+
+# get sheetnames of loaded workbook
+print(wb.sheetnames)
+
